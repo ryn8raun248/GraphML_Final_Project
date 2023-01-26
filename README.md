@@ -1,1 +1,6 @@
-# GraphML_Final_Project
+# Graph ML Final Project
+### Author: Collin Quinn
+
+#### Introduction: 
+
+
