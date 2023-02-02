@@ -11,7 +11,7 @@ Now to introduce the concept of graph machine learning, which is the approach we
 #### Abstract:
 As discussed in the introduction, fraudelent activity for companies causes huge problems for both the companies and end users, costing billions of dollars in losses. Therefore, the ability to solve such an issue reaps huge rewards, especially since traditional methods of solving this issue aren't quite sophisticated enough. However, when reading the original [paper](https://arxiv.org/pdf/2008.08692.pdf) and [codebase](https://github.com/YingtongDou/CARE-GNN), they mentioned they used the Adam optimizer, but did not provide an explanation of why, and did not mention they tried any other alertnatives. Therefore, it was my goal to try different optimizers to see if I can improve upon their results. 
 
-Hypothesis: 
+Hypothesis: If I experiment with several other optimizers (i.e., Adamax), then I can improve the fraud detection performance results on the Yelp dataset.  
 
 #### Methods:
 In this project, we are using graph machine learning to look at false reviews on a Yelp dataset, which includes hotel and restaurant reviews filtered (spam) and recommended (legitimate) by Yelp. 
@@ -20,9 +20,6 @@ In this project, we are using graph machine learning to look at false reviews on
 
 
 #### Conclusion:
-
-
-
 
 
 
