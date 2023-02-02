@@ -27,7 +27,7 @@ In this project, we are using graph machine learning to look at false reviews on
 
 #### Sources:
 
-Original Paper:
+Original Paper:<br>
 [Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters](https://arxiv.org/pdf/2008.08692.pdf)
 
 For orignal code, we used the follwing source. Minor tweaks were added to this code to change optimizers. 
