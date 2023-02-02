@@ -8,12 +8,11 @@ Now to introduce the concept of graph machine learning, which is the approach we
 
 ![Screenshot](image001.jpg)
 
-
 #### Abstract:
-
+As discussed in the introduction, fraudelent activity for companies causes huge problems for both the companies and end users, costing billions of dollars in losses. Therefore, the ability to solve such an issue reaps huge rewards, especially since traditional methods of solving this issue aren't quite sophisticated enough. However, when reading this p
 
 #### Methods:
-
+In this project, we are using graph machine learning to look at false reviews on a Yelp dataset, which includes hotel and restaurant reviews filtered (spam) and recommended (legitimate) by Yelp. 
 
 #### Results:
 
@@ -28,7 +27,10 @@ Now to introduce the concept of graph machine learning, which is the approach we
 
 #### Sources:
 
-For orignal code, we used this source. Minor tweaks were added to change optimizers. 
+Original Paper:
+[Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters](https://arxiv.org/pdf/2008.08692.pdf)
+
+For orignal code, we used the follwing source. Minor tweaks were added to this code to change optimizers. 
 
 @inproceedings{dou2020enhancing,
   title={Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters},
@@ -37,5 +39,5 @@ For orignal code, we used this source. Minor tweaks were added to change optimiz
   year={2020}
 }
 
-https://github.com/YingtongDou/CARE-GNN
+[Codebase](https://github.com/YingtongDou/CARE-GNN)
 
