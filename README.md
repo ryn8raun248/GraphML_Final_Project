@@ -14,13 +14,15 @@ As discussed in the introduction, fraudelent activity for companies causes huge 
 Hypothesis: If I experiment with several other optimizers (i.e., Adamax), then I can improve the fraud detection performance results on the Yelp dataset.  
 
 #### Methods:
-In this project, we are using graph machine learning to look at false reviews on a Yelp dataset, which includes hotel and restaurant reviews filtered (spam) and recommended (legitimate) by Yelp. 
+In this project, we are using graph machine learning to look at false reviews on a Yelp dataset, which includes hotel and restaurant reviews filtered (spam) and recommended (legitimate) by Yelp. Based on previous studies which show that opinion fraudsters have connections in user, product, review text, and time, we take reviews as nodes in the graph and design three relations: 1) R-U-R: it connects reviews posted by the same user; 2) R-S-R: it connects reviews under the same product with the same star rating (1-5 stars); 3) R-T-R: it connects two reviews under the same product posted in the same month.
+
+I am using different optimizers as experiments. This includes Aadamax, <TODO>
+
 
 #### Results:
 
 
 #### Conclusion:
-
 
 
 
