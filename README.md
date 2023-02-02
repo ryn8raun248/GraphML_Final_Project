@@ -1,7 +1,5 @@
 # Graph ML Final Project
-2/10/23
-
-### Author: Collin Quinn
+### Author: Collin Quinn, Feb 2023
 
 #### Introduction: 
 
