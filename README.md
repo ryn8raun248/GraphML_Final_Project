@@ -2,7 +2,9 @@
 ### Author: Collin Quinn, Feb 2023
 
 #### Introduction: 
+Fraudulent activities severely impact many industries (i.e., e-commerce, social media, financial services), where users disguise as regular users to bypass anti-fraud systems to disperse disinformation or reap other end-user's privacy . In fact, American consumers reported losing more than $5.8 billion to frauds in 2021, up more than 70% over 2020. Many techniques have been used to detect fraudsters—rule-based filters, anomaly detection, and machine learning (ML) models, to name a few. However, these traditional/previous methods have not been sophisticated or flexible enough to detect the whole spectrum of suspicious online behaviors. For example, anyone who has browsed e-commerece websites such as Yelp or Amazon has likely come across a few product reviews that look a bit suspicious.
 
+In real-world data, entities often involve rich relationships with other entities. 
 
 #### Abstract:
 
