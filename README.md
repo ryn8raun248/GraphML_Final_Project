@@ -41,4 +41,5 @@ For orignal code, we used the follwing source. Minor tweaks were added to this c
 
 [Codebase](https://github.com/YingtongDou/CARE-GNN)
 [Amazon Blog](https://aws.amazon.com/blogs/machine-learning/build-a-gnn-based-real-time-fraud-detection-solution-using-amazon-sagemaker-amazon-neptune-and-the-deep-graph-library/)
+[YelpChi Dataset](https://paperswithcode.com/dataset/yelpchi)
 
