@@ -1,4 +1,4 @@
-# Graph ML Final Project'
+# Graph ML Final Project
 ## Author: Collin Quinn, Feb 2023
 Note: There is no Jupyter Notebook for this project. All code is ran via command line. 
 
