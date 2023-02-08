@@ -76,6 +76,7 @@ git clone https://github.com/YingtongDou/CARE-GNN.git
 cd CARE-GNN
 pip3 install -r requirements.txt
 ```
+UPDATE 2/8: Also run 'pip install gtrick'
 
 To run the code, you need to have at least **Python 3.6** or later versions. 
 
