@@ -37,10 +37,10 @@ Original Paper: [Enhancing Graph Neural Network-based Fraud Detectors against Ca
 For orignal code, we used the follwing source. Minor tweaks were added to this code to change optimizers. You can see the changes I made to the original code [here](https://github.com/ryn8raun248/GraphML_Final_Project/commit/138e66a31973531d9f3211dcd14a2f137404dcc2).
 
 @inproceedings{dou2020enhancing,
-  title={Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters},
-  author={Dou, Yingtong and Liu, Zhiwei and Sun, Li and Deng, Yutong and Peng, Hao and Yu, Philip S},
-  booktitle={Proceedings of the 29th ACM International Conference on Information and Knowledge Management (CIKM'20)},
-  year={2020}
+  title={Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters},<br>
+  author={Dou, Yingtong and Liu, Zhiwei and Sun, Li and Deng, Yutong and Peng, Hao and Yu, Philip S},<br>
+  booktitle={Proceedings of the 29th ACM International Conference on Information and Knowledge Management (CIKM'20)},<br>
+  year={2020}<br>
 }
 
 [Codebase (used by authors in the paper)](https://github.com/YingtongDou/CARE-GNN) |
