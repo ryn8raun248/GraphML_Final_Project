@@ -33,7 +33,7 @@ See [Readme](https://github.com/ryn8raun248/GraphML_Final_Project/tree/main/code
 
 Original Paper: [Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters](https://arxiv.org/pdf/2008.08692.pdf)
 
-For orignal code, we used the follwing source. Minor tweaks were added to this code to change optimizers. 
+For orignal code, we used the follwing source. Minor tweaks were added to this code to change optimizers. You can see the changes I made to the original code [here](https://github.com/ryn8raun248/GraphML_Final_Project/commit/138e66a31973531d9f3211dcd14a2f137404dcc2).
 
 @inproceedings{dou2020enhancing,
   title={Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters},
