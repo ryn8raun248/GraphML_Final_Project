@@ -19,7 +19,7 @@ In this project, we are using graph machine learning to look at false reviews on
 I am using different optimizers as experiments. This includes Aadamax, TODO
 
 
-#### Results:
+#### Results: [Results_Final PDF](https://github.com/ryn8raun248/GraphML_Final_Project/blob/main/Results_Final.pdf)
 
 
 #### Conclusion:
