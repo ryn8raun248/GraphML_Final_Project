@@ -26,7 +26,7 @@ I am using different optimizers as experiments. This includes Aadamax, TODO
 
 
 #### Reproducing Results:
-See [Readme](https://github.com/ryn8raun248/GraphML_Final_Project/tree/main/code#running) for reproducing results. 
+See [Readme](https://github.com/ryn8raun248/GraphML_Final_Project/tree/main/code#running) for reproducing results. Note that the code in this repository is cited below. The code does include the modifications to the code that I did for the project, which can be noted  [here](https://github.com/ryn8raun248/GraphML_Final_Project/commit/138e66a31973531d9f3211dcd14a2f137404dcc2).
 
 
 #### Sources:
