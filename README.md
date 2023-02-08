@@ -1,4 +1,4 @@
-# Graph ML Final Project
+# Graph ML Final Project'
 ## Author: Collin Quinn, Feb 2023
 
 #### Introduction: 
@@ -24,6 +24,9 @@ I am using different optimizers as experiments. This includes Aadamax, TODO
 
 #### Conclusion:
 
+
+#### Reproducing Results:
+See [Readme](https://github.com/ryn8raun248/GraphML_Final_Project/tree/main/code#running) for reproducing results. 
 
 
 #### Sources:
