@@ -8,6 +8,11 @@ from utils import *
 from model import *
 from layers import *
 from graphsage import *
+from gtrick.dgl import VirtualNode
+from gtrick import FLAG
+import seaborn as sns
+import matplotlib.pyplot as plt
+import matplotlib.ticker as mticker
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
@@ -99,7 +104,18 @@ elif args.model == 'SAGE':
 if args.cuda:
 	gnn_model.cuda()
 
-optimizer = torch.optim.Adam(filter(lambda p: p.requires_grad, gnn_model.parameters()), lr=args.lr, weight_decay=args.lambda_2)
+# optimizer = torch.optim.Adam(filter(lambda p: p.requires_grad, gnn_model.parameters()), lr=args.lr, weight_decay=args.lambda_2)
+# optimizer = torch.optim.Adamax(filter(lambda p: p.requires_grad, gnn_model.parameters()), lr=args.lr)
+# optimizer = torch.optim.RMSprop(filter(lambda p: p.requires_grad, gnn_model.parameters()), lr=args.lr)
+# optimizer = torch.optim.SGD(filter(lambda p: p.requires_grad, gnn_model.parameters()), lr=args.lr, momentum=0.9)
+# optimizer = torch.optim.Adadelta(filter(lambda p: p.requires_grad, gnn_model.parameters()), lr=args.lr)
+# optimizer = torch.optim.Adagrad(filter(lambda p: p.requires_grad, gnn_model.parameters()), lr=args.lr)
+# optimizer = torch.optim.NAdam(filter(lambda p: p.requires_grad, gnn_model.parameters()), lr=args.lr, weight_decay=args.lambda_2)
+# optimizer = torch.optim.RAdam(filter(lambda p: p.requires_grad, gnn_model.parameters()), lr=args.lr, weight_decay=args.lambda_2)
+# optimizer = torch.optim.Rprop(filter(lambda p: p.requires_grad, gnn_model.parameters()), lr=args.lr)
+optimizer = torch.optim.ASGD(filter(lambda p: p.requires_grad, gnn_model.parameters()), lr=args.lr)
+
+losses = []
 times = []
 performance_log = []
 
@@ -135,6 +151,7 @@ for epoch in range(args.num_epochs):
 		epoch_time += end_time - start_time
 		loss += loss.item()
 
+	losses.append(loss.item() / num_batches)
 	print(f'Epoch: {epoch}, loss: {loss.item() / num_batches}, time: {epoch_time}s')
 
 	# testing the model for every $test_epoch$ epoch
@@ -144,3 +161,13 @@ for epoch in range(args.num_epochs):
 		else:
 			gnn_auc, label_auc, gnn_recall, label_recall = test_care(idx_test, y_test, gnn_model, args.batch_size)
 			performance_log.append([gnn_auc, label_auc, gnn_recall, label_recall])
+
+
+# Line Plot
+
+losses_float = [float(loss) for loss in losses]
+plt.plot(range(1, args.num_epochs + 1), losses_float)
+plt.gca().xaxis.set_major_locator(mticker.MultipleLocator(1))
+plt.xlabel('Epoch')
+plt.ylabel('Loss')
+plt.show()
