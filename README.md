@@ -9,7 +9,7 @@ Now to introduce the concept of graph machine learning, which is the approach we
 ![Screenshot](image001.jpg)
 
 #### Abstract:
-As discussed in the introduction, fraudelent activity for companies causes huge problems for both the companies and end users, costing billions of dollars in losses. Therefore, the ability to solve such an issue reaps huge rewards, especially since traditional methods of solving this issue aren't quite sophisticated enough. However, when reading the original [paper](https://arxiv.org/pdf/2008.08692.pdf) and [codebase](https://github.com/YingtongDou/CARE-GNN), they mentioned they used the Adam optimizer, but did not provide an explanation of why, and did not mention they tried any other alertnatives. Therefore, it was my goal to try different optimizers to see if I can improve upon their results. 
+As discussed in the introduction, fraudelent activity for companies causes huge problems for both the companies and end users, costing billions of dollars in losses. Therefore, the ability to solve such an issue reaps huge rewards, especially since traditional methods of solving this issue aren't quite sophisticated enough. However, when reading the original [paper](https://arxiv.org/pdf/2008.08692.pdf) and [codebase](https://github.com/YingtongDou/CARE-GNN), they mentioned they used the Adam optimizer, but did not provide an explanation of why, and did not mention they tried any other alertnatives. Therefore, it was my goal to try different optimizers to see if I can improve upon their results. I measure my results by comparing accuracy, recall, loss, and F1 score.  
 
 *Hypothesis: If I experiment with several other optimizers, then I can improve the fraud detection performance results on the Yelp dataset.* 
 
@@ -23,7 +23,7 @@ I am using different optimizers as experiments. This includes Aadamax, RMSprop, 
 
 
 #### Conclusion:
-
+My hypothesis proved to be true. After testing out nine separate optimizers, I was able to increase the performance the most with the NAdam optimizer. This was relatively surprising that the reasoning for originally choosing the Adam optimizer was not discussed in the paper. However, with my results, I have proved that other optimization techniques can improve upon the authors' results. 
 
 #### Reproducing Results:
 See [Readme](https://github.com/ryn8raun248/GraphML_Final_Project/tree/main/code#running) for reproducing results. Note that the code in this repository is cited below. The code does include the modifications to the code that I did for the project, which can be noted  [here](https://github.com/ryn8raun248/GraphML_Final_Project/commit/138e66a31973531d9f3211dcd14a2f137404dcc2).
